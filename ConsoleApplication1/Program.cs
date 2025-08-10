@@ -11,12 +11,10 @@ namespace ConsoleApplication1
             Console.WriteLine(2 - 3);
             Console.WriteLine(Math.Sin(0));
             Console.WriteLine(2*2);
-            double a = 1;
-            double b = 2;
-            Console.WriteLine(a/b);
+            Console.WriteLine(1.0/2);
             Console.WriteLine(2 * 5);
             Console.WriteLine(Math.Sqrt(4));
-            
+            MyClass.DoSome();
         }
     }
 }
