@@ -6,24 +6,35 @@ namespace ConsoleApplication1
     {
         public static void DoSome()
         {
-            Console.WriteLine("введіть, будь ласка, число");
-            double imp1 = double.Parse(Console.ReadLine());
-            double imp2 = double.Parse(Console.ReadLine());
+            double imp1, imp2;
+
+            Console.WriteLine("Введіть, будь ласка, перше число:");
+            while (!double.TryParse(Console.ReadLine(), out imp1))
+            {
+                Console.WriteLine("Помилка! Введіть коректне число:");
+            }
+
+            Console.WriteLine("Введіть друге число:");
+            while (!double.TryParse(Console.ReadLine(), out imp2))
+            {
+                Console.WriteLine("Помилка! Введіть коректне число:");
+            }
+
             if (imp1 > 0.0)
             {
                 if (imp2 > 0.0)
                 {
-                    Console.WriteLine( imp1 + imp2 );
-                } else
+                    Console.WriteLine("Сума: " + (imp1 + imp2));
+                }
+                else
                 {
-                    Console.WriteLine("просимо пробачення, зараз дана функція не працює)");
+                    Console.WriteLine("Просимо пробачення, зараз дана функція не працює)");
                 }
             }
             else
             {
-                Console.WriteLine("перше число не правильне");
+                Console.WriteLine("Перше число має бути додатним.");
             }
-            
 
             
 
