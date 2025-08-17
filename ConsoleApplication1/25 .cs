@@ -38,7 +38,7 @@ else
 */
 
 // 134 задача
-Console.Write("Введіть, будь ласка, ваше ім'я: ");
+    Console.Write("Введіть, будь ласка, ваше ім'я: ");
 string name = Console.ReadLine();
 
 int age;

@@ -1,5 +1,6 @@
 using System;
 
+
 namespace ConsoleApplication1
 {
     internal class Program
@@ -15,6 +16,8 @@ namespace ConsoleApplication1
             Console.WriteLine(2 * 5);
             Console.WriteLine(Math.Sqrt(4));
             MyClass.DoSome();
+            NewClass.DoNothing();
+            
         }
     }
 }
